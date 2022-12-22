@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import Container from './components/Container';
+import Header from './components/Header';
+import Create from './pages/Create';
+import Home from './pages/Home';
+import Result from './pages/Result';
 
 function App() {
+  const isHome = useLocation().pathname === '/';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      {!isHome && <Header />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/result/:id" element={<Result />} />
+      </Routes>
+    </Container>
   );
 }
 
