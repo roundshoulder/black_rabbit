@@ -1,6 +1,7 @@
 {
   "name": "black_rabbit",
   "version": "0.1.0",
+  "homepage": "https://roundshoulder.github.io/black_rabbit",
   "private": true,
   "dependencies": {
     "@emotion/css": "^11.10.5",
