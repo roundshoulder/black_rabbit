@@ -26,7 +26,7 @@ function Create() {
     const itemConatiner = css`
       width: 25%;
       font-family: inherit;
-      font-size: 14px;
+      font-size: 12px;
       color: black;
       border: none;
       background: none;
@@ -36,8 +36,9 @@ function Create() {
       align-items: center;
       z-index: 10;
       height: 100px;
-      margin-bottom: 30px;
+      margin-bottom: 22px;
       position: relative;
+      line-height: 16px;
     `;
 
     const check = css`
