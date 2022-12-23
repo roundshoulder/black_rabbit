@@ -1,8 +1,5 @@
 @font-face {font-family: 'UhBeeGENWOO';src: url('/src/static/fonts/UhBeeGENWOO.eot');}
 @font-face {font-family: 'UhBeeGENWOO';src: url('/src/static/fonts/UhBeeGENWOO.woff') format('woff');}
-article { font-family: "UhBeeGENWOO", serif;}
-textarea  {font-family: "UhBeeGENWOO", serif; }
-
 
 html, body, #root {
   font-family: 'UhBeeGENWOO', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,11 +7,28 @@ html, body, #root {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   background-color: #001738;
   color: #ffffff;
+  font-weight: bold;
 }
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input {
+  font-family: "UhBeeGENWOO", serif;
+  background: none;
+  border: none;
+  font-size: 16px;
+} :focus {
+  outline: none;
+}
+
+textarea  {font-family: "UhBeeGENWOO", serif; }

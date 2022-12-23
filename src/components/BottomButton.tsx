@@ -20,6 +20,7 @@ function BottomButton({
     height: 53px;
     color: ${enable ? 'black' : 'white'};
     background-image: url(${enable ? yellow_button : grey_button});
+    margin-top: 20px;
   `;
   return (
     <button onClick={onclick} disabled={!enable} className={button}>
