@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import results from '../components/results';
+import results, { getResult } from '../components/results';
 import WishInput from '../components/WishInput';
 import result_rabbit from '../static/images/result_rabbit.png';
 import hand from '../static/images/hand.png';
@@ -14,7 +14,7 @@ function Result() {
   } else {
     navigate('/');
   }
-  const result = wishKeys.length === 1 ? results[wishKeys[0]] : results[0];
+  const result = getResult(wishKeys);
 
   const instagram = css`
     text-decoration: none;
