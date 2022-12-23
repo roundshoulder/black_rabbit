@@ -57,16 +57,32 @@ export function getResult(wishKeys: number[]) {
         result = results[17];
         break;
       //3개를 고른 경우
-      case 12 || 102 || 1002 || 3 || 2:
+      case 12:
+      case 102:
+      case 1002:
+      case 3:
+      case 2:
         result = results[19];
         break;
-      case 21 || 120 || 1020 || 30 || 20:
+      case 21:
+      case 120:
+      case 1020:
+      case 30:
+      case 20:
         result = results[20];
         break;
-      case 201 || 210 || 1200 || 300 || 200:
+      case 201:
+      case 210:
+      case 1200:
+      case 300:
+      case 200:
         result = results[21];
         break;
-      case 2001 || 2010 || 2100 || 3000 || 2000:
+      case 2001:
+      case 2010:
+      case 2100:
+      case 3000:
+      case 2000:
         result = results[22];
         break;
       default:
