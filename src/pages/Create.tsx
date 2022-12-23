@@ -9,13 +9,19 @@ import { useState } from 'react';
 import create_input_1 from '../static/images/create_input_1.png';
 import create_input_2 from '../static/images/create_input_2.png';
 import create_input_3 from '../static/images/create_input_3.png';
+import { useNavigate } from 'react-router-dom';
 
 function Create() {
-  const [select, setSelect] = useState<number[]>([]);
+  const navigate = useNavigate();
+  interface wishProps {
+    [id: number]: string;
+  }
+  const [wish, setWish] = useState<wishProps>({});
+  const wishKeys = Object.keys(wish).map((v) => parseInt(v));
   const inputBackground =
-    select.length === 1
+    wishKeys.length === 1
       ? create_input_1
-      : select.length === 2
+      : wishKeys.length === 2
       ? create_input_2
       : create_input_3;
   const ItemContainer = ({
@@ -50,13 +56,19 @@ function Create() {
       <button
         className={itemConatiner}
         onClick={() => {
-          select.includes(index)
-            ? setSelect(select.filter((i) => i !== index))
-            : select.length < 3 && setSelect([...select, index]);
+          wishKeys.includes(index)
+            ? setWish(
+                wishKeys
+                  .filter((i) => i !== index)
+                  .reduce((cur, key) => {
+                    return Object.assign(cur, { [key]: wish[key] });
+                  }, {})
+              )
+            : wishKeys.length < 3 && setWish({ ...wish, [index]: '' });
         }}
       >
         <img src={item.img} alt={item.name} />
-        {select.includes(index) && (
+        {wishKeys.includes(index) && (
           <img src={create_check} alt="checked" className={check} />
         )}
         {item.name}
@@ -92,18 +104,18 @@ function Create() {
         />
         <div className={ingredientsContainer}>
           {ingredients.map((item, i) => (
-            <ItemContainer item={item} index={i} />
+            <ItemContainer item={item} index={i} key={i} />
           ))}
         </div>
       </div>
-      {select.length > 0 && (
+      {wishKeys.length > 0 && (
         <div>
           <img src={create_detail} alt="구체적으로 적을 수록 좋아" />
           <div className={paper}>
             <img src={inputBackground} alt="paper" />
             <div style={{ position: 'absolute', top: 28, left: 34 }}>
-              {select.map((i) => (
-                <div className={inputContainer}>
+              {wishKeys.map((i) => (
+                <div className={inputContainer} key={i}>
                   <div style={{ width: '30px' }}>
                     <img
                       src={ingredients[i].img}
@@ -111,14 +123,29 @@ function Create() {
                       style={{ maxWidth: '30px', maxHeight: '30px' }}
                     />
                   </div>
-                  <input placeholder="입력하세요" />
+                  <input
+                    placeholder="입력하세요"
+                    onChange={(e) => {
+                      setWish({
+                        ...wish,
+                        [i]: e.target.value,
+                      });
+                    }}
+                  />
                 </div>
               ))}
             </div>
           </div>
         </div>
       )}
-      <BottomButton text="흑끼한테 전달하기" onclick={() => {}} />
+      <BottomButton
+        text="흑끼한테 전달하기"
+        enable={wishKeys.length > 0 && !Object.values(wish).includes('')}
+        onclick={() => {
+          window.localStorage.setItem('wish', JSON.stringify(wish));
+          navigate('/loading');
+        }}
+      />
     </>
   );
 }

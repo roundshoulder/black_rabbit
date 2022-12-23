@@ -3,6 +3,7 @@ import Container from './components/Container';
 import Header from './components/Header';
 import Create from './pages/Create';
 import Home from './pages/Home';
+import Loading from './pages/Loading';
 import Result from './pages/Result';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create" element={<Create />} />
-        <Route path="/result/:id" element={<Result />} />
+        <Route path="/loading" element={<Loading />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
     </Container>
   );
