@@ -49,7 +49,11 @@ function Result() {
           >
             {result.info}
           </span>
-          <img src={result_rabbit} alt="공유하면 이뤄질지도 몰라" />
+          <img
+            src={result_rabbit}
+            alt="공유하면 이뤄질지도 몰라"
+            style={{ width: '90%' }}
+          />
           {wishKeys.length > 0 && (
             <WishInput wishKeys={wishKeys} wish={JSON.parse(wish)} />
           )}

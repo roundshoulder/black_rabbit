@@ -81,6 +81,7 @@ function Create() {
       <img
         src={create_ingredients}
         alt="떡에 들어갈 재료를 골라봐. 3개까지만 가능!"
+        style={{ width: '90%' }}
       />
       <div style={{ position: 'relative' }}>
         <img
@@ -96,7 +97,11 @@ function Create() {
       </div>
       {wishKeys.length > 0 && (
         <>
-          <img src={create_detail} alt="구체적으로 적을 수록 좋아" />
+          <img
+            src={create_detail}
+            alt="목표를 말해봐봐봐봐봐봐봐봐"
+            style={{ width: '90%' }}
+          />
           <WishInput wishKeys={wishKeys} wish={wish} setWish={setWish} />
         </>
       )}
