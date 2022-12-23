@@ -30,10 +30,11 @@ function WishInput({
     gap: 16px;
     margin-bottom: 13px;
   `;
+
   return (
     <div className={paper}>
       <img src={inputBackground} alt="paper" style={{ width: '100%' }} />
-      <div style={{ position: 'absolute', top: 28, left: 34 }}>
+      <div style={{ position: 'absolute', top: 28, left: 34, width: '80%' }}>
         {wishKeys.map((i) => (
           <div className={inputContainer} key={i}>
             <div style={{ width: '30px' }}>
@@ -45,6 +46,7 @@ function WishInput({
             </div>
             {setWish ? (
               <input
+                style={{ backgroundColor: 'red', width: '100%' }}
                 placeholder="입력하세요"
                 onChange={(e) => {
                   setWish({
@@ -52,7 +54,6 @@ function WishInput({
                     [i]: e.target.value,
                   });
                 }}
-                maxLength={14}
               />
             ) : (
               <span style={{ color: 'black' }}>{wish[i]}</span>

@@ -27,7 +27,7 @@ function Result() {
   return (
     <>
       {wish && (
-        <>
+        <div>
           <span style={{ fontSize: '28px' }}>{result.name}</span>
           <img src={result.img} alt={result.name} />
           <span style={{ padding: '10px', fontSize: '14px' }}>
@@ -44,7 +44,7 @@ function Result() {
             <img src={hand} alt="다른 떡 구경하기" style={{ width: '40px' }} />{' '}
             다른 떡 구경하기
           </a>
-        </>
+        </div>
       )}
     </>
   );
