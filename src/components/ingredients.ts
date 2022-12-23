@@ -25,7 +25,7 @@ const ingredients: ingredient[] = [
     img: require('../static/images/gradients/연어.png'),
   },
   {
-    name: '금연/금주 열매',
+    name: '금연/금주열매',
     img: require('../static/images/gradients/헛개.png'),
   },
   {
