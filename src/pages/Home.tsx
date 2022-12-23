@@ -16,9 +16,9 @@ function Home() {
       <img src={home_rabbit} alt="2023 흑끼의 마법 떡집" className={titleImg} />
       {/* prettier-ignore */}
       <p style={{ whiteSpace: 'pre-line', textAlign: 'center' }}>
-        새해 목표가 담긴 재료를 선택하면{'\n'}
-        내가 만든 떡 준다 ㅅㄱ{'\n'}
-        3줄은 되야될듯??
+        우리 흑끼가 창업했어요!{'\n'}
+        당신의 2023 새해 목표가 담긴 재료로{'\n'}
+        흑끼가 마법의 떡을 만들어준답니다!
       </p>
       <BottomButton
         text="새해목표 쓰고 덕담받기"
