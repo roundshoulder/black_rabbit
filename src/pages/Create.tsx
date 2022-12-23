@@ -101,7 +101,7 @@ function Create() {
           <img src={create_detail} alt="구체적으로 적을 수록 좋아" />
           <div className={paper}>
             <img src={inputBackground} alt="paper" />
-            <div style={{ position: 'absolute', top: 22, left: 36 }}>
+            <div style={{ position: 'absolute', top: 28, left: 34 }}>
               {select.map((i) => (
                 <div className={inputContainer}>
                   <div style={{ width: '30px' }}>
