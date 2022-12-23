@@ -26,6 +26,7 @@ function WishInput({
   `;
   const inputContainer = css`
     display: flex;
+    align-items: center;
     gap: 16px;
     margin-bottom: 20px;
   `;
@@ -51,6 +52,7 @@ function WishInput({
                     [i]: e.target.value,
                   });
                 }}
+                maxLength={14}
               />
             ) : (
               <span style={{ color: 'black' }}>{wish[i]}</span>
