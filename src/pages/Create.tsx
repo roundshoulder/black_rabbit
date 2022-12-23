@@ -6,10 +6,8 @@ import create_background from '../static/images/create_background.png';
 import ingredients, { ingredient } from '../components/ingredients';
 import { css } from '@emotion/css';
 import { useState } from 'react';
-import create_input_1 from '../static/images/create_input_1.png';
-import create_input_2 from '../static/images/create_input_2.png';
-import create_input_3 from '../static/images/create_input_3.png';
 import { useNavigate } from 'react-router-dom';
+import WishInput from '../components/WishInput';
 
 function Create() {
   const navigate = useNavigate();
@@ -18,12 +16,6 @@ function Create() {
   }
   const [wish, setWish] = useState<wishProps>({});
   const wishKeys = Object.keys(wish).map((v) => parseInt(v));
-  const inputBackground =
-    wishKeys.length === 1
-      ? create_input_1
-      : wishKeys.length === 2
-      ? create_input_2
-      : create_input_3;
   const ItemContainer = ({
     item,
     index,
@@ -82,14 +74,7 @@ function Create() {
     top: 0;
     padding: 20px;
   `;
-  const paper = css`
-    position: relative;
-  `;
-  const inputContainer = css`
-    display: flex;
-    gap: 16px;
-    margin-bottom: 20px;
-  `;
+
   return (
     <>
       <img
@@ -111,31 +96,7 @@ function Create() {
       {wishKeys.length > 0 && (
         <div>
           <img src={create_detail} alt="구체적으로 적을 수록 좋아" />
-          <div className={paper}>
-            <img src={inputBackground} alt="paper" />
-            <div style={{ position: 'absolute', top: 28, left: 34 }}>
-              {wishKeys.map((i) => (
-                <div className={inputContainer} key={i}>
-                  <div style={{ width: '30px' }}>
-                    <img
-                      src={ingredients[i].img}
-                      alt={ingredients[i].name}
-                      style={{ maxWidth: '30px', maxHeight: '30px' }}
-                    />
-                  </div>
-                  <input
-                    placeholder="입력하세요"
-                    onChange={(e) => {
-                      setWish({
-                        ...wish,
-                        [i]: e.target.value,
-                      });
-                    }}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+          <WishInput wishKeys={wishKeys} wish={wish} setWish={setWish} />
         </div>
       )}
       <BottomButton
