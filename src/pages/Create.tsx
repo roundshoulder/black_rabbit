@@ -36,7 +36,7 @@ function Create() {
       align-items: center;
       z-index: 10;
       height: 100px;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
       position: relative;
       line-height: 16px;
     `;
@@ -73,7 +73,7 @@ function Create() {
     display: flex;
     flex-wrap: wrap;
     top: 0;
-    padding: 10px;
+    padding: 20px;
   `;
 
   return (

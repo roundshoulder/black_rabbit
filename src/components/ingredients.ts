@@ -13,7 +13,7 @@ const ingredients: ingredient[] = [
     img: require('../static/images/gradients/아침햇살.png'),
   },
   {
-    name: '돈 쌓이는 금가루',
+    name: '돈되는 금가루',
     img: require('../static/images/gradients/금.png'),
   },
   {
@@ -21,7 +21,7 @@ const ingredients: ingredient[] = [
     img: require('../static/images/gradients/라면.png'),
   },
   {
-    name: '여행 떠나는 연어',
+    name: '여행 떠난 연어',
     img: require('../static/images/gradients/연어.png'),
   },
   {
@@ -49,7 +49,7 @@ const ingredients: ingredient[] = [
     img: require('../static/images/gradients/짝궁.png'),
   },
   {
-    name: '화목해지는 후라이',
+    name: '화목한 후라이',
     img: require('../static/images/gradients/계란후라이.png'),
   },
 ];
