@@ -28,7 +28,7 @@ function WishInput({
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   `;
   return (
     <div className={paper}>
