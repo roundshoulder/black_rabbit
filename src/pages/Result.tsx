@@ -41,7 +41,7 @@ function Result() {
           <span
             style={{
               padding: '10px',
-              fontSize: '16px',
+              fontSize: '15px',
               whiteSpace: 'pre-line',
               textAlign: 'center',
               marginBottom: '60px',
