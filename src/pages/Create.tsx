@@ -73,7 +73,7 @@ function Create() {
     display: flex;
     flex-wrap: wrap;
     top: 0;
-    padding: 20px;
+    padding: 15px;
   `;
 
   return (

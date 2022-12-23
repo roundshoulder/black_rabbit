@@ -31,7 +31,7 @@ function WishInput({
   `;
   return (
     <div className={paper}>
-      <img src={inputBackground} alt="paper" />
+      <img src={inputBackground} alt="paper" style={{ width: '100%' }} />
       <div style={{ position: 'absolute', top: 28, left: 34 }}>
         {wishKeys.map((i) => (
           <div className={inputContainer} key={i}>
