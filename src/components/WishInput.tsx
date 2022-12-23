@@ -46,8 +46,9 @@ function WishInput({
             </div>
             {setWish ? (
               <input
-                style={{ backgroundColor: 'red', width: '100%' }}
+                style={{ width: '100%' }}
                 placeholder="입력하세요"
+                maxLength={22}
                 onChange={(e) => {
                   setWish({
                     ...wish,

@@ -24,10 +24,18 @@ function Result() {
     margin-top: 30px;
   `;
 
+  const container = css`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+  `;
+
   return (
     <>
       {wish && (
-        <div>
+        <div className={container}>
           <span style={{ fontSize: '28px' }}>{result.name}</span>
           <img src={result.img} alt={result.name} />
           <span style={{ padding: '10px', fontSize: '14px' }}>
