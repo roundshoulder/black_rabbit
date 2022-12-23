@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import results, { getResult } from '../components/results';
+import { getResult } from '../components/results';
 import WishInput from '../components/WishInput';
 import result_rabbit from '../static/images/result_rabbit.png';
 import hand from '../static/images/hand.png';
