@@ -95,10 +95,10 @@ function Create() {
         </div>
       </div>
       {wishKeys.length > 0 && (
-        <div>
+        <>
           <img src={create_detail} alt="구체적으로 적을 수록 좋아" />
           <WishInput wishKeys={wishKeys} wish={wish} setWish={setWish} />
-        </div>
+        </>
       )}
       <BottomButton
         text="흑끼한테 전달하기"
