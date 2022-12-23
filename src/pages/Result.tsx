@@ -38,7 +38,15 @@ function Result() {
         <div className={container}>
           <span style={{ fontSize: '28px' }}>{result.name}</span>
           <img src={result.img} alt={result.name} />
-          <span style={{ padding: '10px', fontSize: '14px' }}>
+          <span
+            style={{
+              padding: '10px',
+              fontSize: '14px',
+              whiteSpace: 'pre-line',
+              textAlign: 'center',
+              marginBottom: '60px',
+            }}
+          >
             {result.info}
           </span>
           <img src={result_rabbit} alt="공유하면 이뤄질지도 몰라" />
