@@ -3,6 +3,7 @@ import title from '../static/images/title.png';
 import home_rabbit from '../static/images/home_rabbit.png';
 import BottomButton from '../components/BottomButton';
 import { useNavigate } from 'react-router-dom';
+import Hits from '../components/Hits';
 
 function Home() {
   const navigate = useNavigate();
@@ -24,6 +25,7 @@ function Home() {
         text="새해목표 쓰고 덕담받기"
         onclick={() => navigate('/create')}
       />
+      <Hits />
     </>
   );
 }
