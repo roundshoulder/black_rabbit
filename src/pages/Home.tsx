@@ -22,7 +22,7 @@ function Home() {
         흑끼가 마법의 떡을 만들어준답니다!
       </p>
       <BottomButton
-        text="새해목표 쓰고 덕담받기"
+        text="새해목표 쓰고 마법떡 받기"
         onclick={() => navigate('/create')}
       />
       <Hits />
