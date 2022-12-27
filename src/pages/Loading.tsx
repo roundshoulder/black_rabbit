@@ -33,6 +33,7 @@ function Loading() {
   const items = css`
     display: flex;
     gap: 20px;
+    align-items: center;
   `;
 
   const rotate = css`

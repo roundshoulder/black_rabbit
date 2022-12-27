@@ -45,6 +45,7 @@ function Result() {
               whiteSpace: 'pre-line',
               textAlign: 'center',
               marginBottom: '60px',
+              fontWeight: 'normal',
             }}
           >
             {result.info}
