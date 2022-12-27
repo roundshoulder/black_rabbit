@@ -39,7 +39,7 @@ function Loading() {
     animation: spin 5s ease-in infinite;
     @keyframes spin {
       100% {
-        transform: rotate(2520deg);
+        transform: rotate(2160deg);
       }
     }
   `;
