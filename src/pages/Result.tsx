@@ -21,7 +21,7 @@ function Result() {
     color: inherit;
     display: flex;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
   `;
 
   const container = css`
@@ -32,24 +32,23 @@ function Result() {
     padding-top: 40px;
   `;
 
+  const text = css`
+    padding: 10px;
+    font-size: 16px;
+    white-space: pre-line;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: normal;
+    line-height: 24px;
+  `;
+
   return (
     <>
       {wish && (
         <div className={container}>
           <span style={{ fontSize: '28px' }}>{result.name}</span>
           <img src={result.img} alt={result.name} />
-          <span
-            style={{
-              padding: '10px',
-              fontSize: '16px',
-              whiteSpace: 'pre-line',
-              textAlign: 'center',
-              marginBottom: '60px',
-              fontWeight: 'normal',
-            }}
-          >
-            {result.info}
-          </span>
+          <span className={text}>{result.info}</span>
           <img
             src={result_rabbit}
             alt="공유하면 이뤄질지도 몰라"
