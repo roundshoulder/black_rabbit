@@ -5,6 +5,7 @@ import Adfit from './Adfit';
 function Container({ children }: { children: ReactNode }) {
   const container = css`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
   `;
