@@ -1,5 +1,6 @@
 import { css } from '@emotion/css';
 import { ReactNode } from 'react';
+import Adfit from './Adfit';
 
 function Container({ children }: { children: ReactNode }) {
   const container = css`
@@ -21,6 +22,7 @@ function Container({ children }: { children: ReactNode }) {
   `;
   return (
     <div className={container}>
+      <Adfit />
       <div className={innerContainer}>{children}</div>
     </div>
   );
