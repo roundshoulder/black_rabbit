@@ -16,9 +16,9 @@ function Container({ children }: { children: ReactNode }) {
     position: relative;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px;
     padding-bottom: 100px;
     @media screen and (min-width: 480px) {
       width: 480px;
