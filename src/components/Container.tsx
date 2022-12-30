@@ -7,14 +7,15 @@ function Container({ children }: { children: ReactNode }) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
   `;
 
   const innerContainer = css`
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     width: 100%;
     padding: 10px;
     padding-bottom: 100px;

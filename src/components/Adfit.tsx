@@ -16,7 +16,7 @@ function Adfit() {
     document.querySelector('.adfit')?.appendChild(scr);
   }, []);
 
-  return <div className="adfit"></div>;
+  return <div className="adfit" style={{ width: '100%' }}></div>;
 }
 
 export default Adfit;
