@@ -1,35 +1,32 @@
 import { css } from '@emotion/css';
 import { useNavigate } from 'react-router-dom';
-import left from '../static/images/header_left.png';
-import right from '../static/images/header_right.png';
 
 function Header() {
   const navigate = useNavigate();
   const header = css`
+    width: 90%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
   `;
-  const title = css`
+  const nav = css`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
     font-family: inherit;
     color: inherit;
     background: none;
     border: none;
   `;
-  const stars = css`
-    width: calc(50% - 60px);
-  `;
+
   return (
     <div className={header}>
-      <img src={left} alt="stars" className={stars} />
-      <button className={title} onClick={() => navigate('/')}>
-        <span>2023</span>
-        <span>흑끼의 마법 떡집</span>
+      <button className={nav} onClick={() => navigate('/')}>
+        {`< 처음으로`}
       </button>
-      <img src={right} alt="stars" className={stars} />
+      <button className={nav} onClick={() => navigate('/')}>
+        흑끼의 마법떡집
+      </button>
     </div>
   );
 }

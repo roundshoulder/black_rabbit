@@ -18,8 +18,6 @@ function Container({ children }: { children: ReactNode }) {
     align-items: center;
     gap: 25px;
     width: 100%;
-    padding: 10px 0px;
-    padding-bottom: 100px;
     @media screen and (min-width: 480px) {
       width: 480px;
     }

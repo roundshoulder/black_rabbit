@@ -26,7 +26,7 @@ function BottomButton({
   const floating = css`
     position: absolute;
     right: -20px;
-    top: 5px;
+    top: 10px;
     animation: bounce 1.5s ease infinite;
     /* prettier-ignore */
     @keyframes bounce {
