@@ -1,9 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import { getResult } from '../components/results';
+import results, { getResult } from '../components/results';
 import result_hidden from '../static/images/result_hidden.svg';
 import result_sun from '../static/images/result_sun.svg';
-import result_good from '../static/images/result_good.svg';
-import result_bad from '../static/images/result_bad.svg';
+import result_good_bad from '../static/images/result_good_bad.svg';
 import result_stamp from '../static/images/result_stamp.svg';
 import { css } from '@emotion/css';
 import BottomButton from '../components/BottomButton';
@@ -18,6 +17,8 @@ function Result() {
     navigate('/');
   }
   const result = getResult(wishKeys);
+  const good = results[result.good];
+  const bad = results[result.bad];
 
   const sunContainer = css`
     width: 100%;
@@ -50,6 +51,13 @@ function Result() {
     white-space: pre-line;
     text-align: center;
     line-height: 22px;
+  `;
+
+  const goodbadContainer = css`
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   `;
 
   return (
@@ -89,8 +97,27 @@ function Result() {
           </div>
         </div>
       )}
-      <img src={result_good} alt="뽀뽀쪽" />
-      <img src={result_bad} alt="빌런 토끼" />
+      <div style={{ position: 'relative', height: '220px' }}>
+        <img src={result_good_bad} alt="뽀뽀쪽" />
+        <div
+          style={{
+            position: 'absolute',
+            width: '100%',
+            top: '115px',
+            display: 'flex',
+            fontSize: '12px',
+          }}
+        >
+          <div className={goodbadContainer}>
+            <img src={good.img} alt={good.name} width={100} />
+            <p>{good.name}</p>
+          </div>
+          <div className={goodbadContainer}>
+            <img src={bad.img} alt={bad.name} width={100} />
+            <p>{bad.name}</p>
+          </div>
+        </div>
+      </div>
 
       <a href="https://instagram.com/magic_heukki?igshid=MWI4MTIyMDE=">
         <BottomButton

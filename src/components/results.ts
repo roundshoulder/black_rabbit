@@ -2,6 +2,8 @@ export interface result {
   name: string;
   img: any;
   info: string;
+  good: number;
+  bad: number;
 }
 
 const categories: { [index: number]: number } = {
@@ -95,6 +97,8 @@ export function getResult(wishKeys: number[]) {
 
 const results: { [id: number]: result } = {
   0: {
+    good: 10,
+    bad: 1,
     name: '다이어트용 야채설기',
     img: require('../static/images/result/0.png'),
     info: `이 떡으로 말하자면 맛은 하나도 없는
@@ -104,6 +108,8 @@ const results: { [id: number]: result } = {
     근데 얘도 너무 많이 먹으면 살찌니까 그만 먹어 이 돼지야 ><`,
   },
   1: {
+    good: 10,
+    bad: 1,
     name: '갓생도 식후경 쌀떡볶이',
     img: require('../static/images/result/1.png'),
     info: `후후 자네가 새해부터 일찍 일어나는 새인가?
@@ -113,6 +119,8 @@ const results: { [id: number]: result } = {
     오늘 할 일: 흑끼한테 당근사주기`,
   },
   2: {
+    good: 10,
+    bad: 1,
     name: '부기온앤온 금가루 뿌린 화과자',
     img: require('../static/images/result/2.png'),
     info: `머야머야 옷이 그게 머야-!!
@@ -123,6 +131,8 @@ const results: { [id: number]: result } = {
     그리고 실례가 안 된다면 아이스크림 하나만 사주십시오`,
   },
   3: {
+    good: 10,
+    bad: 1,
     name: '애인이 끓여준 떡라면',
     img: require('../static/images/result/3.png'),
     info: `우왕 따뜻한 온기가 마구 올라오는 게 보여?
@@ -133,6 +143,8 @@ const results: { [id: number]: result } = {
     아니 잠깐.. 왤케 설레게 나를 쳐다보는거야 으앙 ㅠ 소름끼쳐!`,
   },
   4: {
+    good: 10,
+    bad: 1,
     name: '날씨는 언제나 내 편! 기우제용 콩편',
     img: require('../static/images/result/4.png'),
     info: `하이하이! 나는 너의 날씨요정!
@@ -143,6 +155,8 @@ const results: { [id: number]: result } = {
     그럴거면 그냥 날씨예보 봐 이 바보얌 ><`,
   },
   5: {
+    good: 10,
+    bad: 1,
     name: '간과 폐를 건강하게 헛개도라지 시루떡',
     img: require('../static/images/result/5.png'),
     info: `이 떡으로 말하자면 헛개나무 열매가
@@ -154,6 +168,8 @@ const results: { [id: number]: result } = {
     싫어 나는 흑기사가 아니라 흑끼걸랑 ㅋ`,
   },
   6: {
+    good: 10,
+    bad: 1,
     name: '엿처럼 한방에 붙는 찹쌀떡',
     img: require('../static/images/result/6.png'),
     info: `후후 이 떡은 내 비장의 무기!
@@ -165,6 +181,8 @@ const results: { [id: number]: result } = {
     힝 실은 뻥임 ㅅㄱ`,
   },
   7: {
+    good: 10,
+    bad: 1,
     name: '대학원생의 가호를 받은 물떡',
     img: require('../static/images/result/7.png'),
     info: `이 떡으로 말하자면
@@ -174,6 +192,8 @@ const results: { [id: number]: result } = {
     근데 많이 먹어서 교수님이 대학원으로 부르면 나는 몰랑`,
   },
   8: {
+    good: 10,
+    bad: 1,
     name: '인간이 되자! 쑥떡',
     img: require('../static/images/result/8.png'),
     info: `으앗! 벌써 맛없는 냄새나 ㅠㅠ
@@ -184,6 +204,8 @@ const results: { [id: number]: result } = {
     잉 맞다 그거 먹으면 1년동안 입냄새남 ㅋ 먹기 전에 말한단걸 깜빡><`,
   },
   9: {
+    good: 10,
+    bad: 1,
     name: '즐거운 취미를 위한 초코크림떡',
     img: require('../static/images/result/9.png'),
     info: `왓 이즈 유얼 하비?
@@ -196,6 +218,8 @@ const results: { [id: number]: result } = {
     흑끼한테 당근 사주기, 흑끼한테 당근 사주기, 흑끼한테 당근....`,
   },
   10: {
+    good: 10,
+    bad: 1,
     name: '친구랑 나눠먹는 조랭이떡',
     img: require('../static/images/result/10.png'),
     info: `이 떡으로 말하자면
@@ -206,6 +230,8 @@ const results: { [id: number]: result } = {
     이제는 우리의 날들이 온다고~!!`,
   },
   11: {
+    good: 10,
+    bad: 1,
     name: '가족끼리 먹는 떡국',
     img: require('../static/images/result/11.png'),
     info: `어머머! 이게 뭐람?
@@ -218,6 +244,8 @@ const results: { [id: number]: result } = {
   },
   // 2개
   12: {
+    good: 10,
+    bad: 1,
     name: '현실과 낭만 둘다 놓칠 수 없는 구름떡',
     img: require('../static/images/result/12.png'),
     info: `Hey! 자네!!
@@ -231,6 +259,8 @@ const results: { [id: number]: result } = {
     으앙 몰라 오글거려 ㅎㅎ`,
   },
   13: {
+    good: 10,
+    bad: 1,
     name: '사회생활 만렙 술떡',
     img: require('../static/images/result/13.png'),
     info: `아이고 선배님~~팀장님~~ 싸수님~~ 
@@ -241,6 +271,8 @@ const results: { [id: number]: result } = {
     언제까지 어깨춤을 추게할거양~ 내 어깨를 봐~ 탈골됐잖아`,
   },
   14: {
+    good: 10,
+    bad: 1,
     name: '고생끝에 낙이 오리라 솔방울떡',
     img: require('../static/images/result/14.png'),
     info: `이봐! 자네!
@@ -252,6 +284,8 @@ const results: { [id: number]: result } = {
     그건 바로바로............!!! 장난이지롱 편하게 먹으라구`,
   },
   15: {
+    good: 10,
+    bad: 1,
     name: '낭만적인 분위기메이커 티라미수떡',
     img: require('../static/images/result/15.png'),
     info: `이 떡을 로맨틱한 너의 눈동자에 빠뜨리고 싶어...!
@@ -262,6 +296,8 @@ const results: { [id: number]: result } = {
     혹시 떡말고 라면도 주고 싶은데.. 그대와 함께라면 >< !!`,
   },
   16: {
+    good: 10,
+    bad: 1,
     name: '그대여 꽃 피우리라 화전',
     img: require('../static/images/result/16.png'),
     info: `어이어이, 설마 삶에서 인내와 낭만을 원하는 귀요미가 너야?
@@ -274,6 +310,8 @@ const results: { [id: number]: result } = {
     인내의 땀이 묻은 아름다운 청바지!@@@`,
   },
   17: {
+    good: 10,
+    bad: 1,
     name: '무한한 가능성을 지닌 가래떡',
     img: require('../static/images/result/17.png'),
     info: `아이참~ 기다료바~ 
@@ -287,6 +325,8 @@ const results: { [id: number]: result } = {
 
   // 3개
   18: {
+    good: 10,
+    bad: 1,
     name: '다방면에서 성공할 무지개떡',
     img: require('../static/images/result/18.png'),
     info: `후후 나 눈썰미 좋은 거 알지? 너한테서 팔방미인이 보인다구!
@@ -298,6 +338,8 @@ const results: { [id: number]: result } = {
     그거 알아? 무지개떡 먹으면 무지 개운함 ㅋ`,
   },
   19: {
+    good: 10,
+    bad: 1,
     name: '돈이 보이는 금빛 인절미',
     img: require('../static/images/result/19.png'),
     info: `이건 평범한 인절미가 아니야,
@@ -309,6 +351,8 @@ const results: { [id: number]: result } = {
     인절미 너무 많이 먹으면 목막혀서 위험해! 데인절미! ㅋ`,
   },
   20: {
+    good: 10,
+    bad: 1,
     name: '낭만파 새하얀 백설기',
     img: require('../static/images/result/20.png'),
     info: `어머 이 낭만적인 사람!
@@ -321,6 +365,8 @@ const results: { [id: number]: result } = {
     시른뎅? 시른뎅? 킹받쥬? 못때리쥬 ㅋㅋ`,
   },
   21: {
+    good: 10,
+    bad: 1,
     name: '당신처럼 달달한 꿀떡',
     img: require('../static/images/result/21.png'),
     info: `주변 사람들을 소중히 여기는 스윗한 인간 그 잡채 ..
@@ -331,6 +377,8 @@ const results: { [id: number]: result } = {
     힝 그니까 그만 먹어! 아이참 그만먹으라구! ㅎㅎ`,
   },
   22: {
+    good: 10,
+    bad: 1,
     name: '슈퍼맨은 바로 당신! 떡케이크',
     img: require('../static/images/result/22.png'),
     info: `이봐 자네, 지구를 구할 생각은 없어?
