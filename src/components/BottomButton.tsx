@@ -1,6 +1,4 @@
 import { css } from '@emotion/css';
-import grey_button from '../static/images/grey_button.png';
-import yellow_button from '../static/images/yellow_button.png';
 
 function BottomButton({
   text,
@@ -12,14 +10,14 @@ function BottomButton({
   enable?: boolean;
 }) {
   const button = css`
-    border: none;
-    font-family: inherit;
-    font-size: 18px;
+    border: solid 2px ${enable ? '#000000' : '#767676'};
+
     background: none;
     width: 340px;
-    height: 53px;
-    color: ${enable ? 'black' : 'white'};
-    background-image: url(${enable ? yellow_button : grey_button});
+    height: 45px;
+    border-radius: 45px;
+    color: ${enable ? '#000000' : '#767676'};
+    background-color: ${enable ? '#FFFF00' : '#AFAFAF'};
     margin-top: 20px;
   `;
   return (

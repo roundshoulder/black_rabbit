@@ -11,6 +11,7 @@ function Container({ children }: { children: ReactNode }) {
   `;
 
   const innerContainer = css`
+    flex-grow: 1;
     display: flex;
     position: relative;
     flex-direction: column;
