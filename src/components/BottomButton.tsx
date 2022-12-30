@@ -28,49 +28,15 @@ function BottomButton({
     right: -20px;
     top: 5px;
     animation: bounce 1.5s ease infinite;
+    /* prettier-ignore */
     @keyframes bounce {
-      0% {
-        transform: translateY(0%);
-      }
-      10% {
-        transform: translateY(-20%);
-      }
-      20% {
-        transform: translateY(0%);
-      }
-      25% {
-        transform: translateY(-7%);
-      }
-      27% {
-        transform: translateY(0%);
-      }
-      29% {
-        transform: translateY(-3%);
-      }
-      30% {
-        transform: translateY(0);
-      }
-      /* 70% {
-        transform: translateY(0%);
-      }
-      80% {
-        transform: translateY(-20%);
-      }
-      90% {
-        transform: translateY(0%);
-      }
-      95% {
-        transform: translateY(-7%);
-      }
-      97% {
-        transform: translateY(0%);
-      }
-      99% {
-        transform: translateY(-3%);
-      }
-      100% {
-        transform: translateY(0);
-      } */
+      0% { transform: translateY(0%); }
+      10% { transform: translateY(-20%); }
+      20% { transform: translateY(0%); }
+      25% { transform: translateY(-7%); }
+      27% { transform: translateY(0%); }
+      29% { transform: translateY(-3%); }
+      30% { transform: translateY(0); }
     }
   `;
   return (

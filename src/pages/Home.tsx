@@ -27,7 +27,7 @@ function Home() {
         hasClick={true}
       />
       <div className={counterContainer}>
-        <div style={{ paddingLeft: '60px', position: 'absolute', top: '0px' }}>
+        <div style={{ position: 'absolute', top: '0px', right: '-60px' }}>
           <img src={counter_bg} alt="떡 타간 사람 복받음" />
         </div>
         <Hits />
