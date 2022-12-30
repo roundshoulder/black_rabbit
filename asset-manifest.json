@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/black_rabbit/static/css/main.ce358cea.css",
-    "main.js": "/black_rabbit/static/js/main.a8a323fa.js",
+    "main.js": "/black_rabbit/static/js/main.d1a93e10.js",
     "static/js/787.c96cc867.chunk.js": "/black_rabbit/static/js/787.c96cc867.chunk.js",
     "static/media/home.svg": "/black_rabbit/static/media/home.0a1d2567cfa40ff91283705bc365e545.svg",
     "static/media/result_hidden.svg": "/black_rabbit/static/media/result_hidden.fe57dd6c6f4ecc63752e463139c6cabd.svg",
@@ -18,11 +18,11 @@
     "index.html": "/black_rabbit/index.html",
     "static/media/create_check.svg": "/black_rabbit/static/media/create_check.24ba7521414fee64826396ddf7577622.svg",
     "main.ce358cea.css.map": "/black_rabbit/static/css/main.ce358cea.css.map",
-    "main.a8a323fa.js.map": "/black_rabbit/static/js/main.a8a323fa.js.map",
+    "main.d1a93e10.js.map": "/black_rabbit/static/js/main.d1a93e10.js.map",
     "787.c96cc867.chunk.js.map": "/black_rabbit/static/js/787.c96cc867.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce358cea.css",
-    "static/js/main.a8a323fa.js"
+    "static/js/main.d1a93e10.js"
   ]
 }
