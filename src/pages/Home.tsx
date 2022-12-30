@@ -24,6 +24,7 @@ function Home() {
       <BottomButton
         text="새해목표 쓰고 마법떡 받기"
         onclick={() => navigate('/create')}
+        hasClick={true}
       />
       <div className={counterContainer}>
         <div style={{ paddingLeft: '60px', position: 'absolute', top: '0px' }}>
