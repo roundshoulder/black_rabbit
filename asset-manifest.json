@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/black_rabbit/static/css/main.27c2745d.css",
-    "main.js": "/black_rabbit/static/js/main.4278de09.js",
+    "main.css": "/black_rabbit/static/css/main.ce358cea.css",
+    "main.js": "/black_rabbit/static/js/main.accecf58.js",
     "static/js/787.c96cc867.chunk.js": "/black_rabbit/static/js/787.c96cc867.chunk.js",
     "static/media/home.svg": "/black_rabbit/static/media/home.0a1d2567cfa40ff91283705bc365e545.svg",
-    "static/media/result_hidden.svg": "/black_rabbit/static/media/result_hidden.271641e719cb22cd1fc4a9f942122230.svg",
+    "static/media/result_hidden.svg": "/black_rabbit/static/media/result_hidden.fe57dd6c6f4ecc63752e463139c6cabd.svg",
     "static/media/create_ingredients.svg": "/black_rabbit/static/media/create_ingredients.fd0ee59a364ac46a59d875afa036e7ef.svg",
     "static/media/loading_rabbit.png": "/black_rabbit/static/media/loading_rabbit.71b0f896d562f95b83f1.png",
+    "static/media/result_good.svg": "/black_rabbit/static/media/result_good.ada2ec283727919efd4380d5900edc2a.svg",
+    "static/media/result_bad.svg": "/black_rabbit/static/media/result_bad.7774d15ed3334c2e45bd7d204e262d22.svg",
     "static/media/counter_bg.svg": "/black_rabbit/static/media/counter_bg.9cf123d91d9988f184bb8905ddad581b.svg",
     "static/media/menu.svg": "/black_rabbit/static/media/menu.0e3f404911caa72cad0bd4c7ceea7208.svg",
-    "static/media/result_sun.svg": "/black_rabbit/static/media/result_sun.75a8570386fff2b7578b9d86bd54ad84.svg",
+    "static/media/result_sun.svg": "/black_rabbit/static/media/result_sun.0837a5f734415131e5ba9e1a4813819b.svg",
     "static/media/click.svg": "/black_rabbit/static/media/click.72c7e1b5a0b9e356082cea6dfcc0b993.svg",
     "static/media/create_bucket.svg": "/black_rabbit/static/media/create_bucket.05611aadfd24a5707e18411a14f06ab9.svg",
+    "static/media/result_stamp.svg": "/black_rabbit/static/media/result_stamp.3c8cc19bfe9ce51b56b55484edde51b6.svg",
     "index.html": "/black_rabbit/index.html",
     "static/media/create_check.svg": "/black_rabbit/static/media/create_check.24ba7521414fee64826396ddf7577622.svg",
-    "main.27c2745d.css.map": "/black_rabbit/static/css/main.27c2745d.css.map",
-    "main.4278de09.js.map": "/black_rabbit/static/js/main.4278de09.js.map",
+    "main.ce358cea.css.map": "/black_rabbit/static/css/main.ce358cea.css.map",
+    "main.accecf58.js.map": "/black_rabbit/static/js/main.accecf58.js.map",
     "787.c96cc867.chunk.js.map": "/black_rabbit/static/js/787.c96cc867.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27c2745d.css",
-    "static/js/main.4278de09.js"
+    "static/css/main.ce358cea.css",
+    "static/js/main.accecf58.js"
   ]
 }
