@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/black_rabbit/static/css/main.f41a932e.css",
-    "main.js": "/black_rabbit/static/js/main.46fde2e7.js",
+    "main.css": "/black_rabbit/static/css/main.27c2745d.css",
+    "main.js": "/black_rabbit/static/js/main.74cbe847.js",
     "static/js/787.c96cc867.chunk.js": "/black_rabbit/static/js/787.c96cc867.chunk.js",
     "static/media/create_background.png": "/black_rabbit/static/media/create_background.51195b1c8bc678d1c1cb.png",
+    "static/media/home.svg": "/black_rabbit/static/media/home.0a1d2567cfa40ff91283705bc365e545.svg",
     "static/media/create_ingredients.png": "/black_rabbit/static/media/create_ingredients.e1ee573c5bb3c9d21df8.png",
     "static/media/result_rabbit.png": "/black_rabbit/static/media/result_rabbit.b17e2db92e34dbd33e6b.png",
     "static/media/create_detail.png": "/black_rabbit/static/media/create_detail.5e4fb367fde265ff81e7.png",
-    "static/media/home.svg": "/black_rabbit/static/media/home.400de4cc301d51a7b67218cf6d1ed98c.svg",
     "static/media/create_input_3.png": "/black_rabbit/static/media/create_input_3.805c9333e026ba9111ef.png",
     "static/media/loading_rabbit.png": "/black_rabbit/static/media/loading_rabbit.71b0f896d562f95b83f1.png",
-    "static/media/yellow_button.png": "/black_rabbit/static/media/yellow_button.3c8eb4f50e1210ae2d55.png",
-    "static/media/grey_button.png": "/black_rabbit/static/media/grey_button.42e2635d54c942fd2102.png",
     "static/media/create_input_2.png": "/black_rabbit/static/media/create_input_2.e78b8dd7649d6fe2f92d.png",
+    "static/media/counter_bg.svg": "/black_rabbit/static/media/counter_bg.5e91ecc0517bcc6efba8d5fcddedbc09.svg",
     "static/media/create_input_1.png": "/black_rabbit/static/media/create_input_1.b77c2c2990da34fbeb64.png",
-    "static/media/intro.svg": "/black_rabbit/static/media/intro.5a09248edbfc66f358cd78f3adaa2cc6.svg",
     "index.html": "/black_rabbit/index.html",
-    "main.f41a932e.css.map": "/black_rabbit/static/css/main.f41a932e.css.map",
-    "main.46fde2e7.js.map": "/black_rabbit/static/js/main.46fde2e7.js.map",
+    "main.27c2745d.css.map": "/black_rabbit/static/css/main.27c2745d.css.map",
+    "main.74cbe847.js.map": "/black_rabbit/static/js/main.74cbe847.js.map",
     "787.c96cc867.chunk.js.map": "/black_rabbit/static/js/787.c96cc867.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f41a932e.css",
-    "static/js/main.46fde2e7.js"
+    "static/css/main.27c2745d.css",
+    "static/js/main.74cbe847.js"
   ]
 }
