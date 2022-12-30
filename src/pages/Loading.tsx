@@ -19,7 +19,7 @@ function Loading() {
   const wish = localStorage.getItem('wish');
   let wishKeys: number[] = [];
   if (wish) {
-    wishKeys = Object.keys(JSON.parse(wish)).map((v) => parseInt(v, 10));
+    wishKeys = wish.split(',').map((v) => parseInt(v, 10));
   }
 
   const container = css`

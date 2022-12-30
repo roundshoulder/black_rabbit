@@ -1,21 +1,16 @@
 import BottomButton from '../components/BottomButton';
-import create_check from '../static/images/create_check.png';
-import create_ingredients from '../static/images/create_ingredients.png';
-import create_detail from '../static/images/create_detail.png';
-import create_background from '../static/images/create_background.png';
+import create_check from '../static/images/create_check.svg';
+import create_ingredients from '../static/images/create_ingredients.svg';
+import create_bucket from '../static/images/create_bucket.svg';
+import menu from '../static/images/menu.svg';
 import ingredients, { ingredient } from '../components/ingredients';
 import { css } from '@emotion/css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import WishInput from '../components/WishInput';
 
 function Create() {
   const navigate = useNavigate();
-  interface wishProps {
-    [id: number]: string;
-  }
-  const [wish, setWish] = useState<wishProps>({});
-  const wishKeys = Object.keys(wish).map((v) => parseInt(v));
+  const [wish, setWish] = useState<number[]>([]);
   const ItemContainer = ({
     item,
     index,
@@ -24,96 +19,130 @@ function Create() {
     index: number;
   }) => {
     const itemConatiner = css`
-      width: 25%;
-      font-family: inherit;
+      width: 33%;
       font-size: 12px;
-      color: black;
       border: none;
       background: none;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      z-index: 10;
       height: 100px;
-      margin-bottom: 18px;
       position: relative;
-      line-height: 16px;
     `;
 
     const check = css`
       position: absolute;
+      top: 15px;
     `;
 
     return (
       <button
         className={itemConatiner}
         onClick={() => {
-          wishKeys.includes(index)
-            ? setWish(
-                wishKeys
-                  .filter((i) => i !== index)
-                  .reduce((cur, key) => {
-                    return Object.assign(cur, { [key]: wish[key] });
-                  }, {})
-              )
-            : wishKeys.length < 3 && setWish({ ...wish, [index]: '' });
+          wish.includes(index)
+            ? setWish(wish.filter((i) => i !== index))
+            : wish.length < 3 && setWish([...wish, index]);
         }}
       >
         <img src={item.img} alt={item.name} />
-        {wishKeys.includes(index) && (
+        {wish.includes(index) && (
           <img src={create_check} alt="checked" className={check} />
         )}
         {item.name}
       </button>
     );
   };
-  const ingredientsContainer = css`
+
+  const titleConatainer = css`
+    width: 100%;
+    top: -10px;
+    display: flex;
+    justify-content: center;
     position: absolute;
+  `;
+
+  const ingredientsContainer = css`
+    background-color: white;
+    margin: 20px 20px 10px 20px;
+    border: solid 2px black;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    top: 0;
-    padding: 15px;
+    padding: 10px;
+  `;
+
+  const bucketContainer = css`
+    width: 100%;
+    min-height: 100px;
+    position: relative;
   `;
 
   return (
-    <>
+    <div
+      style={{
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <img
         src={create_ingredients}
         alt="떡에 들어갈 재료를 골라봐. 3개까지만 가능!"
-        style={{ width: '90%' }}
+        style={{ width: '90%', marginBottom: '10px' }}
       />
       <div style={{ position: 'relative' }}>
-        <img
-          src={create_background}
-          style={{ width: '100%' }}
-          alt="background"
-        />
+        <div className={titleConatainer}>
+          <img src={menu} alt="2023 행운의 재료" />
+        </div>
         <div className={ingredientsContainer}>
           {ingredients.map((item, i) => (
             <ItemContainer item={item} index={i} key={i} />
           ))}
         </div>
       </div>
-      {wishKeys.length > 0 && (
-        <>
+      <div className={bucketContainer}>
+        <div
+          style={{
+            position: 'absolute',
+            width: '100%',
+            top: '0px',
+            display: 'flex',
+            gap: '20px',
+            justifyContent: 'center',
+            marginTop: '30px',
+            alignItems: 'center',
+          }}
+        >
+          {wish.map((i) => (
+            <img src={ingredients[i].img} alt={ingredients[i].name} key={i} />
+          ))}
+        </div>
+        <p style={{ margin: '0px 20px 30px 20px' }}>* 원산지 : 국내산</p>
+        <div
+          style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
           <img
-            src={create_detail}
-            alt="목표를 말해봐봐봐봐봐봐봐봐"
-            style={{ width: '90%' }}
+            src={create_bucket}
+            alt="바구니를 들고있는 휘끼"
+            style={{ zIndex: '10' }}
           />
-          <WishInput wishKeys={wishKeys} wish={wish} setWish={setWish} />
-        </>
-      )}
+        </div>
+      </div>
       <BottomButton
         text="흑끼한테 전달하기"
-        enable={wishKeys.length > 0 && !Object.values(wish).includes('')}
+        enable={wish.length > 0}
         onclick={() => {
-          window.localStorage.setItem('wish', JSON.stringify(wish));
+          window.localStorage.setItem('wish', wish.toString());
           navigate('/loading');
         }}
       />
-    </>
+    </div>
   );
 }
 

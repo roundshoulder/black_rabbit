@@ -5,6 +5,7 @@ function Header() {
   const navigate = useNavigate();
   const header = css`
     width: 90%;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;

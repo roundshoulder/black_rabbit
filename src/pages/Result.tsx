@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import { getResult } from '../components/results';
-import WishInput from '../components/WishInput';
 import result_rabbit from '../static/images/result_rabbit.png';
 import hand from '../static/images/hand.png';
 import { css } from '@emotion/css';
@@ -10,7 +9,7 @@ function Result() {
   const wish = localStorage.getItem('wish');
   let wishKeys: number[] = [];
   if (wish) {
-    wishKeys = Object.keys(JSON.parse(wish)).map((v) => parseInt(v, 10));
+    wishKeys = wish.split(',').map((v) => parseInt(v, 10));
   } else {
     navigate('/');
   }
@@ -34,7 +33,10 @@ function Result() {
 
   const text = css`
     padding: 10px;
-    font-size: 16px;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
     white-space: pre-line;
     text-align: center;
     margin-bottom: 10px;
@@ -54,9 +56,6 @@ function Result() {
             alt="공유하면 이뤄질지도 몰라"
             style={{ width: '90%' }}
           />
-          {wishKeys.length > 0 && (
-            <WishInput wishKeys={wishKeys} wish={JSON.parse(wish)} />
-          )}
           <a
             href="https://instagram.com/magic_heukki?igshid=MWI4MTIyMDE="
             className={instagram}
