@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { getResult } from '../components/results';
-import result_rabbit from '../static/images/result_rabbit.png';
+import result_hidden from '../static/images/result_hidden.svg';
+import result_sun from '../static/images/result_sun.svg';
 import hand from '../static/images/hand.png';
 import { css } from '@emotion/css';
 
@@ -23,12 +24,19 @@ function Result() {
     margin-top: 20px;
   `;
 
+  const sunContainer = css`
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `;
+
   const container = css`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding-top: 40px;
   `;
 
   const text = css`
@@ -48,14 +56,22 @@ function Result() {
     <>
       {wish && (
         <div className={container}>
-          <span style={{ fontSize: '28px' }}>{result.name}</span>
-          <img src={result.img} alt={result.name} />
+          <p>2023 행운의 떡</p>
+          <span style={{ fontSize: '24px' }}>{result.name}</span>
+          <div className={sunContainer}>
+            <div
+              style={{
+                position: 'absolute',
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+              }}
+            >
+              <img src={result_sun} alt="sun" />
+            </div>
+            <img src={result.img} alt={result.name} style={{ zIndex: '10' }} />
+          </div>
           <span className={text}>{result.info}</span>
-          <img
-            src={result_rabbit}
-            alt="공유하면 이뤄질지도 몰라"
-            style={{ width: '90%' }}
-          />
           <a
             href="https://instagram.com/magic_heukki?igshid=MWI4MTIyMDE="
             className={instagram}
@@ -65,6 +81,13 @@ function Result() {
           </a>
         </div>
       )}
+      <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+        <img
+          src={result_hidden}
+          alt="3대 500토끼"
+          style={{ position: 'absolute', bottom: '0px', right: '0px' }}
+        />
+      </div>
     </>
   );
 }

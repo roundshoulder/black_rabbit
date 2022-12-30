@@ -19,6 +19,7 @@ function Create() {
     index: number;
   }) => {
     const itemConatiner = css`
+      padding: 0;
       width: 33%;
       font-size: 12px;
       border: none;
@@ -29,6 +30,7 @@ function Create() {
       align-items: center;
       height: 100px;
       position: relative;
+      color: black;
     `;
 
     const check = css`
@@ -85,6 +87,7 @@ function Create() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        paddingBottom: '40px',
       }}
     >
       <img

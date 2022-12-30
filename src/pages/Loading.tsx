@@ -48,8 +48,8 @@ function Loading() {
   return (
     <div className={container}>
       <p style={{ whiteSpace: 'pre-line', textAlign: 'center' }}>
-        <span style={{ fontSize: '24px' }}>재료에 맞는{`\n`}</span>
-        <span style={{ fontSize: '40px' }}>떡 만드는 중...</span>
+        <span style={{ fontSize: '24px' }}>흑끼흑끼흑끼끼{`\n`}</span>
+        <span style={{ fontSize: '36px' }}>흑...흐흑...ㅎ흐흑끼끼끼기</span>
       </p>
       <div className={items}>
         {wishKeys.map((i) => (
@@ -66,7 +66,10 @@ function Loading() {
         alt="loading rabbit"
         style={{ width: '110px' }}
       />
-      <span style={{ fontSize: '24px' }}>잠시 기다려바</span>
+      <span style={{ fontSize: '24px', textAlign: 'center' }}>
+        널 위한 마법의 떡<br />
+        만드는 중...
+      </span>
     </div>
   );
 }
