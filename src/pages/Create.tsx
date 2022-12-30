@@ -21,16 +21,17 @@ function Create() {
     const itemConatiner = css`
       padding: 0;
       width: 33%;
-      font-size: 12px;
+      font-size: 10px;
       border: none;
       background: none;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      height: 100px;
+      height: 70px;
       position: relative;
       color: black;
+      margin-bottom: 10px;
     `;
 
     const check = css`
@@ -71,7 +72,7 @@ function Create() {
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
   `;
 
   const bucketContainer = css`
