@@ -19,14 +19,6 @@ function Result() {
   }
   const result = getResult(wishKeys);
 
-  const instagram = css`
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-  `;
-
   const sunContainer = css`
     width: 100%;
     height: 170px;
@@ -40,7 +32,7 @@ function Result() {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    gap: 10px;
   `;
 
   const infoContainer = css`
