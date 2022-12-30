@@ -4,6 +4,7 @@ import result_hidden from '../static/images/result_hidden.svg';
 import result_sun from '../static/images/result_sun.svg';
 import result_good_bad from '../static/images/result_good_bad.svg';
 import result_stamp from '../static/images/result_stamp.svg';
+import result_share from '../static/images/result_share.svg';
 import { css } from '@emotion/css';
 import BottomButton from '../components/BottomButton';
 
@@ -118,7 +119,7 @@ function Result() {
           </div>
         </div>
       </div>
-
+      <img src={result_share} alt="share" />
       <a href="https://instagram.com/magic_heukki?igshid=MWI4MTIyMDE=">
         <BottomButton
           text="다른 떡 구경하기"
