@@ -5,6 +5,7 @@ import result_sun from '../static/images/result_sun.svg';
 import result_good_bad from '../static/images/result_good_bad.svg';
 import result_stamp from '../static/images/result_stamp.svg';
 import result_share from '../static/images/result_share.svg';
+import result_little from '../static/images/result_little.svg';
 import { css } from '@emotion/css';
 import BottomButton from '../components/BottomButton';
 
@@ -66,7 +67,15 @@ function Result() {
       {wish && (
         <div className={container}>
           <p>2023 행운의 떡</p>
-          <p style={{ fontSize: '24px' }}>{result.name}</p>
+          <p
+            style={{
+              fontSize: '24px',
+              whiteSpace: 'pre-line',
+              textAlign: 'center',
+            }}
+          >
+            {result.name}
+          </p>
           <div className={sunContainer}>
             <div
               style={{
@@ -81,7 +90,7 @@ function Result() {
             <img
               src={result.img}
               alt={result.name}
-              style={{ zIndex: '10', width: '30%' }}
+              style={{ zIndex: '10', width: '45%', marginTop: '20px' }}
             />
           </div>
           <div className={infoContainer}>
@@ -104,31 +113,64 @@ function Result() {
           style={{
             position: 'absolute',
             width: '100%',
-            top: '115px',
+            top: '105px',
             display: 'flex',
-            fontSize: '12px',
+            fontSize: '10px',
+            whiteSpace: 'pre-line',
+            textAlign: 'center',
           }}
         >
           <div className={goodbadContainer}>
-            <img src={good.img} alt={good.name} width={100} />
+            <img src={good.img} alt={good.name} width={80} />
             <p>{good.name}</p>
           </div>
           <div className={goodbadContainer}>
-            <img src={bad.img} alt={bad.name} width={100} />
+            <img src={bad.img} alt={bad.name} width={80} />
             <p>{bad.name}</p>
           </div>
         </div>
       </div>
       <img src={result_share} alt="share" />
-      <a href="https://instagram.com/magic_heukki?igshid=MWI4MTIyMDE=">
+      <a
+        href="https://www.instagram.com/magic_heukki/"
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+          paddingRight: '30px',
+        }}
+      >
+        <img src={result_little} alt="휘끼" />
         <BottomButton
           text="다른 떡 구경하기"
           onclick={() => {}}
           hasClick={true}
+          isSmall={true}
         />
       </a>
-      <p style={{ color: 'red' }}>* 경고 : 스크롤을 내리지 마시오.</p>
-      <div style={{ position: 'relative', width: '100%', height: '400px' }}>
+      <p style={{ color: 'red', fontSize: '12px' }}>
+        * 경고. 스크롤을 내리지 마시오.
+      </p>
+      <div
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: '650px',
+          display: 'flex',
+          alignItems: 'center',
+        }}
+      >
+        <div style={{ textAlign: 'center', marginLeft: '20px' }}>
+          <a
+            href="https://www.instagram.com/magic_heukki/"
+            style={{ color: 'grey' }}
+          >
+            @magic_heukki
+          </a>
+          <br />
+          팔로우 안하면 근손실
+          <br />- 3대 500 흑끼 -
+        </div>
         <img
           src={result_hidden}
           alt="3대 500토끼"

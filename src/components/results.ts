@@ -145,7 +145,7 @@ const results: { [id: number]: result } = {
   4: {
     good: 9,
     bad: 8,
-    name: '날씨는 언제나 내 편! 기우제용 콩편',
+    name: '날씨는 언제나 내 편!\n기우제용 콩편',
     img: require('../static/images/result/4.png'),
     info: `하이하이! 나는 너의 날씨요정!
     이 떡은 너를 향한 마법의 주문!
@@ -157,7 +157,7 @@ const results: { [id: number]: result } = {
   5: {
     good: 11,
     bad: 15,
-    name: '간과 폐를 건강하게 헛개도라지 시루떡',
+    name: '간과 폐를 건강하게\n헛개도라지 시루떡',
     img: require('../static/images/result/5.png'),
     info: `이 떡으로 말하자면 헛개나무 열매가
     팍팍 들어간 헛개도라지 시루떡이란 말씀!
@@ -246,7 +246,7 @@ const results: { [id: number]: result } = {
   12: {
     good: 20,
     bad: 19,
-    name: '현실과 낭만 둘다 놓칠 수 없는 구름떡',
+    name: '현실과 낭만\n둘다 놓칠 수 없는 구름떡',
     img: require('../static/images/result/12.png'),
     info: `Hey! 자네!!
     낭만을 꿈꾸며 현실을 살아가고 있지 않은가?
@@ -286,7 +286,7 @@ const results: { [id: number]: result } = {
   15: {
     good: 14,
     bad: 8,
-    name: '낭만적인 분위기메이커 티라미수떡',
+    name: '낭만적인 분위기메이커\n티라미수떡',
     img: require('../static/images/result/15.png'),
     info: `이 떡을 로맨틱한 너의 눈동자에 빠뜨리고 싶어...!
     으앙 어쩜 좋니 ㅎㅎ

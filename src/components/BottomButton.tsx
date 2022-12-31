@@ -6,26 +6,27 @@ function BottomButton({
   onclick,
   enable = true,
   hasClick = false,
+  isSmall = false,
 }: {
   text: string;
   onclick: any;
   enable?: boolean;
   hasClick?: boolean;
+  isSmall?: boolean;
 }) {
   const button = css`
     border: solid 2px ${enable ? '#000000' : '#767676'};
     position: relative;
     background: none;
-    width: 340px;
+    width: ${isSmall ? '170px' : '340px'};
     height: 45px;
     border-radius: 45px;
     color: ${enable ? '#000000' : '#767676'};
     background-color: ${enable ? '#FFFF00' : '#AFAFAF'};
-    /* margin-top: 20px; */
   `;
   const floating = css`
     position: absolute;
-    right: -20px;
+    right: ${isSmall ? '-50px' : '-20px'};
     top: 10px;
     animation: bounce 1.5s ease infinite;
     /* prettier-ignore */
