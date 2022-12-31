@@ -136,6 +136,7 @@ function Create() {
             width: '100%',
             display: 'flex',
             justifyContent: 'center',
+            marginBottom: '10px',
           }}
         >
           <img

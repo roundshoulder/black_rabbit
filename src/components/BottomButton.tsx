@@ -21,7 +21,7 @@ function BottomButton({
     border-radius: 45px;
     color: ${enable ? '#000000' : '#767676'};
     background-color: ${enable ? '#FFFF00' : '#AFAFAF'};
-    margin-top: 20px;
+    /* margin-top: 20px; */
   `;
   const floating = css`
     position: absolute;

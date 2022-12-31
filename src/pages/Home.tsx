@@ -9,6 +9,7 @@ function Home() {
   const navigate = useNavigate();
   const homeImg = css`
     width: 100%;
+    margin-top: 10px;
   `;
   const counterContainer = css`
     position: relative;
