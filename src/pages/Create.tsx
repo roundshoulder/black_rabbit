@@ -20,7 +20,7 @@ function Create() {
   }) => {
     const itemConatiner = css`
       padding: 0;
-      width: 33%;
+      width: 25%;
       font-size: 10px;
       border: none;
       background: none;
@@ -120,10 +120,17 @@ function Create() {
           }}
         >
           {wish.map((i) => (
-            <img src={ingredients[i].img} alt={ingredients[i].name} key={i} />
+            <img
+              src={ingredients[i].img}
+              alt={ingredients[i].name}
+              key={i}
+              style={{ width: '30px' }}
+            />
           ))}
         </div>
-        <p style={{ margin: '0px 20px 30px 20px' }}>* 원산지 : 국내산</p>
+        <p style={{ margin: '0px 20px 30px 20px', fontSize: '10px' }}>
+          * 원산지 : 국내산
+        </p>
         <div
           style={{
             width: '100%',
