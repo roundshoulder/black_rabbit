@@ -1,29 +1,30 @@
 {
   "files": {
     "main.css": "/black_rabbit/static/css/main.517aef81.css",
-    "main.js": "/black_rabbit/static/js/main.008c9ff7.js",
+    "main.js": "/black_rabbit/static/js/main.5b51d88a.js",
     "static/js/787.c96cc867.chunk.js": "/black_rabbit/static/js/787.c96cc867.chunk.js",
     "static/media/home.svg": "/black_rabbit/static/media/home.4d999964c5c10a6beaa9816d118ee602.svg",
     "static/media/result_good_bad.svg": "/black_rabbit/static/media/result_good_bad.a314d3d4edef7519aca352c85efbe26b.svg",
+    "static/media/loading_rabbit.svg": "/black_rabbit/static/media/loading_rabbit.76ef69554975f223602492e73b10bde6.svg",
     "static/media/create_ingredients.svg": "/black_rabbit/static/media/create_ingredients.bc5264a347f5d26ea05962b974d1f9b2.svg",
     "static/media/result_hidden.svg": "/black_rabbit/static/media/result_hidden.8425863df125080fa7148491d14404d7.svg",
     "static/media/result_share.svg": "/black_rabbit/static/media/result_share.c3bfa5b6befb9e2c4a2879330c934ffe.svg",
-    "static/media/loading_rabbit.png": "/black_rabbit/static/media/loading_rabbit.71b0f896d562f95b83f1.png",
     "static/media/counter_bg.svg": "/black_rabbit/static/media/counter_bg.68d8927e72f5dc600032b671eacb41dd.svg",
     "static/media/menu.svg": "/black_rabbit/static/media/menu.7887173b794fd5a51b56943fe1529d80.svg",
     "static/media/result_sun.svg": "/black_rabbit/static/media/result_sun.0837a5f734415131e5ba9e1a4813819b.svg",
     "static/media/create_bucket.svg": "/black_rabbit/static/media/create_bucket.d50312afd81faa399ad659c89ae02ba4.svg",
+    "static/media/loading_bucket.svg": "/black_rabbit/static/media/loading_bucket.4964db9183a6f02e6a480e61eced7d4e.svg",
     "static/media/click.svg": "/black_rabbit/static/media/click.f6c02fdcfcb4a94ac0b5048833dc3c25.svg",
     "static/media/result_stamp.svg": "/black_rabbit/static/media/result_stamp.3c8cc19bfe9ce51b56b55484edde51b6.svg",
     "static/media/result_little.svg": "/black_rabbit/static/media/result_little.28d388d2fccb64f812562ef2f2877193.svg",
     "index.html": "/black_rabbit/index.html",
     "static/media/create_check.svg": "/black_rabbit/static/media/create_check.24ba7521414fee64826396ddf7577622.svg",
     "main.517aef81.css.map": "/black_rabbit/static/css/main.517aef81.css.map",
-    "main.008c9ff7.js.map": "/black_rabbit/static/js/main.008c9ff7.js.map",
+    "main.5b51d88a.js.map": "/black_rabbit/static/js/main.5b51d88a.js.map",
     "787.c96cc867.chunk.js.map": "/black_rabbit/static/js/787.c96cc867.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.517aef81.css",
-    "static/js/main.008c9ff7.js"
+    "static/js/main.5b51d88a.js"
   ]
 }
