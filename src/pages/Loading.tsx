@@ -2,19 +2,20 @@ import { css } from '@emotion/css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ingredients from '../components/ingredients';
-import loading_rabbit from '../static/images/loading_rabbit.png';
+import loading_rabbit from '../static/images/loading_rabbit.svg';
+import loading_bucket from '../static/images/loading_bucket.svg';
 
 function Loading() {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      navigate('/result');
-    }, 5000);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [navigate]);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     navigate('/result');
+  //   }, 5000);
+  //   return () => {
+  //     clearTimeout(timer);
+  //   };
+  // }, [navigate]);
 
   const wish = localStorage.getItem('wish');
   let wishKeys: number[] = [];
@@ -22,55 +23,73 @@ function Loading() {
     wishKeys = wish.split(',').map((v) => parseInt(v, 10));
   }
 
+  wishKeys = [...wishKeys, ...wishKeys, ...wishKeys];
+
   const container = css`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-grow: 1;
-    align-items: center;
+    overflow: hidden;
+    width: 100%;
   `;
 
   const items = css`
+    width: 100%;
     display: flex;
     gap: 20px;
     align-items: center;
-  `;
-
-  const rotate = css`
-    animation: spin 5s ease-in infinite;
-    @keyframes spin {
-      100% {
-        transform: rotate(2160deg);
+    animation: slide 2.5s linear infinite;
+    @keyframes slide {
+      from {
+        margin-left: 0px;
+      }
+      to {
+        margin-left: -273px;
       }
     }
   `;
 
+  // const rotate = css`
+  //   animation: spin 5s ease-in infinite;
+  //   @keyframes spin {
+  //     100% {
+  //       transform: rotate(2160deg);
+  //     }
+  //   }
+  // `;
+
   return (
-    <div className={container}>
-      <p style={{ whiteSpace: 'pre-line', textAlign: 'center' }}>
-        <span style={{ fontSize: '24px' }}>흑끼흑끼흑끼끼{`\n`}</span>
-        <span style={{ fontSize: '36px' }}>흑...흐흑...ㅎ흐흑끼끼끼기</span>
-      </p>
-      <div className={items}>
-        {wishKeys.map((i) => (
-          <img
-            src={ingredients[i].img}
-            alt="ingredients"
-            key={i}
-            className={rotate}
-          />
-        ))}
+    <>
+      <div className={container}>
+        <div className={items}>
+          {wishKeys.map((i) => (
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                flexDirection: 'column',
+              }}
+            >
+              <img src={ingredients[i].img} alt="ingredients" key={i} />
+              <img
+                src={loading_bucket}
+                alt="흑끼"
+                width={'70px'}
+                style={{ zIndex: 10, marginTop: '-10px' }}
+              />
+            </div>
+          ))}
+        </div>
       </div>
+      <p style={{ textAlign: 'center' }}>
+        <span style={{ fontSize: '24px' }}>
+          널 위한 마법의 떡<br />
+          만드는 중...
+        </span>
+      </p>
       <img
         src={loading_rabbit}
         alt="loading rabbit"
-        style={{ width: '110px' }}
+        style={{ width: '100%' }}
       />
-      <span style={{ fontSize: '24px', textAlign: 'center' }}>
-        널 위한 마법의 떡<br />
-        만드는 중...
-      </span>
-    </div>
+    </>
   );
 }
 

@@ -56,7 +56,7 @@ function Result() {
   `;
 
   const goodbadContainer = css`
-    width: 50%;
+    width: 47%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,16 +66,25 @@ function Result() {
     <>
       {wish && (
         <div className={container}>
-          <p>2023 행운의 떡</p>
-          <p
+          <div
             style={{
-              fontSize: '24px',
-              whiteSpace: 'pre-line',
               textAlign: 'center',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '5px',
             }}
           >
-            {result.name}
-          </p>
+            <p>2023 행운의 떡</p>
+            <p
+              style={{
+                fontSize: '24px',
+                whiteSpace: 'pre-line',
+                lineHeight: '32px',
+              }}
+            >
+              {result.name}
+            </p>
+          </div>
           <div className={sunContainer}>
             <div
               style={{
@@ -113,6 +122,7 @@ function Result() {
           style={{
             position: 'absolute',
             width: '100%',
+            gap: '6%',
             top: '105px',
             display: 'flex',
             fontSize: '10px',
@@ -138,6 +148,7 @@ function Result() {
           alignItems: 'center',
           gap: '10px',
           paddingRight: '30px',
+          textDecoration: 'none',
         }}
       >
         <img src={result_little} alt="휘끼" />
