@@ -8,14 +8,14 @@ import loading_bucket from '../static/images/loading_bucket.svg';
 function Loading() {
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     navigate('/result');
-  //   }, 5000);
-  //   return () => {
-  //     clearTimeout(timer);
-  //   };
-  // }, [navigate]);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate('/result');
+    }, 5000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [navigate]);
 
   const wish = localStorage.getItem('wish');
   let wishKeys: number[] = [];
