@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/black_rabbit/static/css/main.517aef81.css",
-    "main.js": "/black_rabbit/static/js/main.03f4c648.js",
+    "main.js": "/black_rabbit/static/js/main.736c0d99.js",
     "static/js/787.c96cc867.chunk.js": "/black_rabbit/static/js/787.c96cc867.chunk.js",
     "static/media/home.svg": "/black_rabbit/static/media/home.4d999964c5c10a6beaa9816d118ee602.svg",
+    "static/media/event.svg": "/black_rabbit/static/media/event.c088634db6c7fb91798c94652855d36a.svg",
     "static/media/result_good_bad.svg": "/black_rabbit/static/media/result_good_bad.a314d3d4edef7519aca352c85efbe26b.svg",
     "static/media/loading_rabbit.svg": "/black_rabbit/static/media/loading_rabbit.76ef69554975f223602492e73b10bde6.svg",
     "static/media/create_ingredients.svg": "/black_rabbit/static/media/create_ingredients.bc5264a347f5d26ea05962b974d1f9b2.svg",
@@ -20,11 +21,11 @@
     "index.html": "/black_rabbit/index.html",
     "static/media/create_check.svg": "/black_rabbit/static/media/create_check.24ba7521414fee64826396ddf7577622.svg",
     "main.517aef81.css.map": "/black_rabbit/static/css/main.517aef81.css.map",
-    "main.03f4c648.js.map": "/black_rabbit/static/js/main.03f4c648.js.map",
+    "main.736c0d99.js.map": "/black_rabbit/static/js/main.736c0d99.js.map",
     "787.c96cc867.chunk.js.map": "/black_rabbit/static/js/787.c96cc867.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.517aef81.css",
-    "static/js/main.03f4c648.js"
+    "static/js/main.736c0d99.js"
   ]
 }
