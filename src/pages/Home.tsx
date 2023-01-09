@@ -28,7 +28,7 @@ function Home() {
         onclick={() => navigate('/create')}
         hasClick={true}
       />
-      <a href="https://www.instagram.com/magic_heukki/">
+      <a href="https://www.instagram.com/p/Cm_4RxHvUcQ/">
         <img
           src={event}
           alt="Event! 흑끼가 스타벅스 커피쏜다 일단 눌러봐 @magic_heukki"
