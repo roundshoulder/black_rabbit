@@ -1,4 +1,4 @@
-# 2023 흑끼의 마법 떡집
+![Frame 236](https://user-images.githubusercontent.com/66757141/213924627-2cbe2274-401b-415a-9dd1-43460c4d1c03.jpg)
 
 ## 🐰 Happy New Year!
 
