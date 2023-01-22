@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# 2023 흑끼의 마법 떡집
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🐰 2023년 새해 맞이 덕담 컨텐츠를 제공하는 서비스입니다.
 
-## Available Scripts
+- 새해 목표와 연관된 `재료`를 선택하면,
+- 흑끼에게 `행운의 떡`과 `덕담`을 받을 수 있어요!
 
-In the project directory, you can run:
+<br/>
 
-### `yarn start`
+## 🥕 Summary
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<table>
+  <tr>
+    <th>Type</th>
+    <td>Static web page</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Version 1.0</th>
+    <td>2022.12.18 ~ 2022.12.25</td>
+    <td>서비스 개발</td>
+  </tr>
+  <tr>
+    <th>Version 2.0</th>
+    <td>2023.01.22 ~</td>
+    <td>사이트 성능 개선</td>
+  </tr>
+  <tr>
+    <th>Role</th>
+    <td>개발, CI/CD, 배포, 그림</td>
+    <td><a href='https://github.com/da-in'>da-in</a></td>
+  </tr>
+</table>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br/>
 
-### `yarn test`
+## 🔧 Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white">
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black">
+<img src="https://img.shields.io/badge/👩‍🎤Emotion/css-D26AC2?style=flat-square&logoColor=white">
+<img src="https://img.shields.io/badge/Github Pages-222222?style=flat-square&logo=Github&logoColor=white">
 
-### `yarn build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚨 웹 성능 Issue
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Google [PageSpeed Insights](https://pagespeed.web.dev/) 에서 웹 성능을 측정하였습니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 개선 전 (2023.01.22 기준)
 
-### `yarn eject`
+<!-- prettier-ignore -->
+||성능|접근성|권장사항|검색엔진 최적화|
+|-|:-:|:-:|:-:|:-:|
+|mobile|**64**|95|100|92|
+|web|96|95|100|100|
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 개선 후 (2023.01.00)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+개선 작업 진행중입니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### TODO
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+First Contentful Paint(3G)
+Time to Interactive
+Speed Index
+Largest contentful Paint
+Cumulative Layout shift
 
-## Learn More
+사용하지 않는 자바스크립트 줄이기
+차세대 형식을 사용해 이미지 제공하기
+콘텐츠가 포함된 최대 페인트 이미지 미리 로드
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+웹폰트가 로드되는 동안 텍스트가 계속 표시되는지 확인하기
+이미지 요소에 `width` 및 `height` 명시
+효율적인 캐시 정책
+중요 요청 체이닝 차단
+요청 수는 낮게, 전송 크기는 작게 유지하기
+콘텐츠가 포함된 최대 페인트 요소
+대규모 레이아웃 변경 피하기
+긴 기본 스레드 작업 피하기
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+\<iframe\> 요소에 제목없음
+문서에 읽기 쉬운 글꼴 크기를 사용하지 않음
